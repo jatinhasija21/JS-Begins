@@ -1,6 +1,6 @@
 // Data types = Primitive & Non-Primitive
 
-// Primitive = String, Number, BigInt, Null, Boolean, Undefined, Symbol
+// Primitive: String, Number, BigInt, Null, Boolean, Undefined, Symbol = Cannot change it's original value 
 
 // string
 const name = "jatin"
@@ -26,7 +26,7 @@ const anotherId = Symbol('123')
 console.log(id === anotherId)
 
 
-// Non-Primitive(Reference type) = Array, Function, Object
+// Non-Primitive(Reference type): Array, Function, Object = It change it's original value 
 
 // array
 const Heros = ["IronMan", "CaptainAmerica", "SpiderMan"]
@@ -41,3 +41,26 @@ let myobj = {
 const myFunction = function(){
     console.log("Hello World")
 }
+
+// ======================================================================================
+
+// Memory = Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutube = "jatinhasija"
+let anothername = myYoutube
+
+anothername = "codewithjatin"
+
+console.log(myYoutube, anothername)
+
+
+let user1 = {
+    Email: "user1@gmail.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+
+user2.Email = "user2@gmail.com"
+
+console.log(user1.Email, user2.Email)
