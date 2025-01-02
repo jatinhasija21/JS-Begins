@@ -1,12 +1,12 @@
 const name = "jatin"
 const surname = " hasija"
 
-// console.log(name + surname + " available this side") // Prefer not to use...
+// console.log(name + surname + " available this side") // Prefer not to use... this method is known as primitive
 
 console.log(`My name is ${name} and my surname is ${surname}`)
 
 // Second way of declare string in js.
-// Modern way of using string in js.
+// Modern way of using string in js this method is also known as object string.
 
 const gameName = new String("GodHand On")
 
